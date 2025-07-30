@@ -1,0 +1,240 @@
+/*Imporation de la police Poppins (Google Fonts)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Reset des marges et des paddings */
+    text-decoration: none;
+    border: none; /* Suppression des bordures par défaut */
+    outline: none; /* Suppression des contours par défaut */
+    font-family: 'Poppins', sans-serif; /* Application de la police Poppins */
+}
+
+html {
+    font-size: 62.5%; /* Taille de police de base pour faciliter les calculs */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Suppression du défilement horizontal */
+    background-color: black;
+    color: white; 
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent; /* Fond transparent */
+    filter: drop-shadow(10px); /* Ombre portée */
+    display: flex; 
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Alignement vertical des éléments */
+    z-index: 100; /* Positionnement au-dessus des autres éléments */
+}
+
+.logo {
+    font-size: 3rem;
+    color: white; /* Couleur de la police */
+    font-weight: 800; /* Épaisseur de la police */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: 0.5s ease; /* Transition pour les effets */
+}
+.logo:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+nav a {
+    font-size: 1.8rm;
+    color: white; /* Couleur des liens */
+    margin-left: 4rem; /* Espace entre les liens */
+    font-weight: 500; /* Épaisseur de la police */
+    transition: 0.3s ease; /* Transition pour les effets */
+    border-bottom: 3px solid transparent; /* Bordure inférieure transparente */
+}
+
+nav a:hover,
+nav a:active {
+    color:  #b74b4b; /* Couleur au survol */
+    border-bottom: 3px solid #b74b4b; /* Bordure inférieure colorée au survol */
+}
+
+/* Media: Adaptation pour les écrans plus petits */
+@media(max-width: 995px){
+    nav {
+        position: absolute; /* Positionnement absolu pour le menu */
+        display: none; /* Masquer le menu par défaut */
+        top: 100%; /* Positionné juste en dessous de l'en-tête */
+        right: 0; /* Aligné à droite */
+        width: 100%; /* Largeur complète */
+        border-left: 3px solid #b74b4b; /* Bordure gauche */
+        border-bottom: 3px solid #b74b4b; /* Bordure inférieure */
+        border-bottom-left-radius: 2rem; /* Arrondi en bas à gauche */
+        padding: 1rem solid; /* Espacement interne */
+        background-color: #161616; /* Fond noir */
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1); /* Bordure supérieure */
+    }
+
+    nav.active {
+        display: block; /* Affichage du menu lorsqu'il est actif */
+    }
+    nav a {
+        display: block; /* Affichage en bloc pour les liens */
+        font-size: 2rem; /* Taille de police plus grande */
+        margin: 3rem 0; /* Marge verticale */
+    }
+    nav a:hover,
+    nav a:active {
+        padding: 1rem; 
+        border-radius: 0.5rem; /* Arrondi des coins */
+        border-bottom: 0.5rem solid #b74b4b; /* Bordure inférieure colorée */
+    }
+}
+
+section {
+    min-height: 100vh; /* Hauteur minimale de la section */
+    padding: 5rem 9% 5rem; /* Espacement interne */
+}
+
+.home {
+    display: flex; /* Affichage en flexbox */
+    justify-content: center; /* Espace entre les éléments */
+    align-items: center; /* Alignement vertical des éléments */
+    gap: 8rem; /* Espace entre les éléments */
+    background-color: black; /* Fond noir */
+}
+.home .home-content h1 {
+    font-size: 6rem; /* Taille de police du titre */
+    font-weight: 700; /* Épaisseur de la police */
+    line-height: 1.3;
+}
+.home .home-content h3 {
+    font-size: 4rem; /* Taille de police du sous-titre */
+    margin-bottom: 1rem; /* Marge inférieure */
+    font-weight: 700; /* Épaisseur de la police */
+}
+.home-img {
+    border-radius: 50%; /* Arrondi de l'image */
+}
+.home-img img {
+    position: relative; /* Positionnement relatif */
+    width: 32vw; /* Largeur de l'image */
+    border-radius: 50%; /* Arrondi de l'image */
+    box-shadow: 0 0 25px solid #b74b4b; /* Ombre portée */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: 0.2s linear; /* Transition pour les effets */
+}
+.home-img img:hover {
+    font-size: 1.8rem; /* Taille de police au survol */
+    font-weight: 500;
+}
+
+span {
+    color: #b74b4b; /* Couleur du texte */
+}
+
+.social-icons a {
+    display: inline-flex; /* Affichage en ligne-flex */
+    justify-content: center; /* Centrage des icônes */
+    align-items: center;
+    width:  4rem; /* Largeur des icônes */
+    height: 4rem; /* Hauteur des icônes */
+    background-color: transparent; /* Fond transparent */
+    border: 0.2rem solid #b74b4b; /* Bordure colorée */
+    font-size: 2rem; /* Taille de police des icônes */
+    border-radius: 50%; /* Arrondi des coins */
+    margin: 3rem 1.5rem 3rem 0; /* Marge autour des icônes */
+    transition: 0.3s ease; /* Transition pour les effets */
+    color: #b74b4b; /* Couleur des icônes */
+}
+.social-icons a:hover {
+    background-color: #b74b4b; /* Fond coloré au survol */
+    color: black; /* Couleur du texte au survol */
+    transform: scale(1.3) translateY(-5px); /* Effet de zoom et translation au survol */
+    box-shadow: 0 0 25px #b74b4b; /* Ombre portée au survol */
+}
+
+.btn {
+    display: inline-block; /* Affichage en bloc en ligne */
+    padding: 1rem 2rem; /* Espacement interne */
+    background-color: black; /* Fond coloré */
+    border-radius: 4rem; /* Arrondi des coins */
+    font-size: 1.6rem; /* Taille de police du bouton */
+    color: #b74b4b; /* Couleur du texte */
+    letter-spacing: 0.3rem; /* Espacement des lettres */
+    font-weight: 600; /* Épaisseur de la police */
+    border: 2px solid #b74b4b; /* Bordure colorée */
+    transition: 0.3s ease; /* Transition pour les effets */
+    cursor: pointer; /* Curseur en forme de main */
+}
+.btn:hover {
+    background-color:  #b74b4b; /* Fond coloré au survol */
+    color: black; /* Couleur du texte au survol */
+    transform: scale(1.03); /* Effet de zoom au survol */
+    box-shadow: 0 0 25px #b74b4b; /* Ombre portée au survol */
+}
+
+.typing-text {
+    font-size: 34px; /* Taille de police du texte */
+    font-weight: 600; /* Épaisseur de la police */
+    min-width: 280px; /* Largeur minimale du texte */
+}
+.typing-text span {
+    position: relative; /* Positionnement relatif */
+}
+.typing-text span::before {
+    content: "IT Enthusiastic"; /* Contenu vide pour l'effet de curseur */
+    color:  #b74b4b; /* Couleur du texte */
+    animation: words 20s infinite; /* Animation des mots */
+}
+.typing-text span::after {
+    content: ""; /* Contenu vide pour l'effet de curseur */
+    background-color: black; /* Fond noir */
+    position: absolute; /* Positionnement absolu */
+    width: calc(100% + 8px); /* Largeur du curseur */
+    height: 100%; /* Hauteur du curseur */
+    border-left: 3px solid black; /* Bordure gauche colorée */
+    right: -8; /* Positionnement à droite */
+    animation: cursor 0.6s infinite; /* Animation du curseur */
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #b74b4b; /* Couleur du curseur */
+    }
+}
+
+@keyframes words{
+    0%, 40% { content: "Scripting Developer"; }
+    41%, 60% { content: "Junior Sysadmin"; }
+    61%, 80% { content: "Junior Web Dev"; }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem; /* Réduction de l'espace entre les éléments */
+    }
+}
+@media (max-width: 995px) {
+    .home {
+        flex-direction: column; /* Affichage en colonne */
+        margin: 5rem 4rem; /* Marge autour de la section */
+    }
+    .home .home-content h3 {
+        font-size: 2.5rem; /* Taille de police du titre */
+    }
+    .home .home-content h1 {
+        font-size: 5rem; /* Taille de police du sous-titre */
+    }
+    .home-img img {
+        width: 70vw; /* Largeur de l'image */
+        margin-top: 4rem; /* Marge supérieure */
+    }
+
+}
+

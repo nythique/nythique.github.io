@@ -1,0 +1,169 @@
+/*Imporation de la police Poppins (Google Fonts)*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+h1 {
+    text-align: center;
+    color:  #b74b4b;
+}
+h3 {
+    margin: 5px;
+}
+
+.skills-list {
+    width: 300px; 
+    color : #ffffff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    background-color: #b74b4b; 
+}
+.skills-list li {
+    margin: 2px 0;
+    padding: 5px;
+}
+
+.bar {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.bar:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(252, 103, 103, 1)0%, rgba(252, 103, 103, 1) 100%);
+}
+
+/*Skills Progression Animations Pour chaque langage de programmation*/
+.html {
+    width: 95%;
+    animation: html 3s;
+}
+.css {
+    width: 10%;
+    animation: html 3s;
+}
+.js {
+    width: 30%;
+    animation: html 3s;
+}
+.py {
+    width: 50%;
+    animation: python 3s;
+}
+.cpp {
+    width: 20%;
+    animation: cpp 3s;
+}
+.c {
+    width: 20%;
+    animation: c 3s;
+}
+.asm {
+    width: 5%;
+    animation: asm 3s;
+}
+
+@keyframes html {
+    0% { width: 0; }
+    100% { width: 95%; }
+}
+@keyframes css {
+    0% { width: 0; }
+    100% { width: 10%; }
+}
+@keyframes js {
+    0% { width: 0; }
+    100% { width: 30%; }
+}
+@keyframes py {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+@keyframes cpp {
+    0% { width: 0; }
+    100% { width: 20%; }
+}
+@keyframes c {
+    0% { width: 0; }
+    100% { width: 20%; }
+}
+@keyframes asm {
+    0% { width: 0; }
+    100% { width: 5%; }
+}
+
+/*Skills Progression Animations Pour chaque Outils techniques*/
+
+.docker {
+    width: 60%;
+    animation: html 3s;
+}
+.git {
+    width: 80%;
+    animation: html 3s;
+}
+.vm {
+    width: 65%;
+    animation: html 3s;
+}
+.linux {
+    width: 50%;
+    animation: python 3s;
+}
+.windows {
+    width: 70%;
+    animation: cpp 3s;
+}
+.arduino {
+    width: 25%;
+    animation: c 3s;
+}
+.pic {
+    width: 30%;
+    animation: asm 3s;
+}
+
+@keyframes docker {
+    0% { width: 0; }
+    100% { width: 60%; }
+}
+@keyframes git {
+    0% { width: 0; }
+    100% { width: 80%; }
+}
+@keyframes vm {
+    0% { width: 0; }
+    100% { width: 65%; }
+}
+@keyframes linux {
+    0% { width: 0; }
+    100% { width: 50%; }
+}
+@keyframes windows {
+    0% { width: 0; }
+    100% { width: 70%; }
+}
+@keyframes arduino {
+    0% { width: 0; }
+    100% { width: 25%; }
+}
+@keyframes pic {
+    0% { width: 0; }
+    100% { width: 30%; }
+}
