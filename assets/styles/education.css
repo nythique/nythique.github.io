@@ -1,25 +1,56 @@
 /*Imporation de la police Poppins (Google Fonts)*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-.premierc {
-    border: solid 2px white;
-    border-radius: 10px 0 10px 0;
-    padding: 5px;
 
+* {
+    font-family: 'Poppins', sans-serif; /* Application de la police Poppins */
+    font-size: 1.5rem;
 }
-.deuxiemec {
-    border: solid 2px white;
+.text-bloc-un {
+    padding: 10px;
     border-radius: 10px 0 10px 0;
-    padding: 5px;
-
 }
-.troisiemec {
-    border: solid 2px white;
-    border-radius: 10px 0 10px 0;
-    padding: 5px;
-
+.text-bloc-deux {
+    padding: 10px;
+    text-align: left;
 }
-.insert-troisiemec {
-    width: 20px;
-    height: 20px;
+.img-school {
+    width: 200px;
+    height: 200px;
+    border: solid 5px  rgb(240, 244, 203);
+    border-radius: 100px;
+    position: relative;
+    left: 100px;
+    top: -10px;
+}
+.img-school:hover{
+    box-sizing: rgb(240, 244, 203);
+    border: solid 1px;
+}
+
+.boite-school-un {
+    margin-top: 30px;
+    position: relative;
+    top: 100px;
+    gap: 3px;
+    border: solid 2px rgb(240, 244, 203);
+    border-radius: 20px 0 20px 0;
+    padding: 50px;
+}
+.boite-school-un:hover {
+    box-shadow: rgb(240, 244, 203);
+    border: solid 5px;
+}
+.boite-school-deux {
+    margin-top: 150px;
+    position: relative;
+    top: -100px;
+    gap: 3px;
+    border: solid 2px  rgb(240, 244, 203);
+    border-radius: 20px 0 20px 0;
+    padding: 50px;
+}
+.boite-school-deux:hover {
+    box-shadow: rgb(240, 244, 203);
+    border: solid 5px;
 }

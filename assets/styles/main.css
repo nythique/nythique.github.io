@@ -60,8 +60,8 @@ nav a {
 
 nav a:hover,
 nav a:active {
-    color:  #b74b4b; /* Couleur au survol */
-    border-bottom: 3px solid #b74b4b; /* Bordure inférieure colorée au survol */
+    color:  rgb(240, 244, 203); /* Couleur au survol */
+    border-bottom: 3px solid rgb(240, 244, 203); /* Bordure inférieure colorée au survol */
 }
 
 /* Media: Adaptation pour les écrans plus petits */
@@ -72,8 +72,8 @@ nav a:active {
         top: 100%; /* Positionné juste en dessous de l'en-tête */
         right: 0; /* Aligné à droite */
         width: 100%; /* Largeur complète */
-        border-left: 3px solid #b74b4b; /* Bordure gauche */
-        border-bottom: 3px solid #b74b4b; /* Bordure inférieure */
+        border-left: 3px solid  rgb(240, 244, 203); /* Bordure gauche */
+        border-bottom: 3px solid  rgb(240, 244, 203); /* Bordure inférieure */
         border-bottom-left-radius: 2rem; /* Arrondi en bas à gauche */
         padding: 1rem solid; /* Espacement interne */
         background-color: #161616; /* Fond noir */
@@ -92,7 +92,7 @@ nav a:active {
     nav a:active {
         padding: 1rem; 
         border-radius: 0.5rem; /* Arrondi des coins */
-        border-bottom: 0.5rem solid #b74b4b; /* Bordure inférieure colorée */
+        border-bottom: 0.5rem solid  rgb(240, 244, 203); /* Bordure inférieure colorée */
     }
 }
 
@@ -125,7 +125,7 @@ section {
     position: relative; /* Positionnement relatif */
     width: 32vw; /* Largeur de l'image */
     border-radius: 50%; /* Arrondi de l'image */
-    box-shadow: 0 0 25px solid #b74b4b; /* Ombre portée */
+    box-shadow: 0 0 25px solid  rgb(240, 244, 203); /* Ombre portée */
     cursor: pointer; /* Curseur en forme de main */
     transition: 0.2s linear; /* Transition pour les effets */
 }
@@ -135,7 +135,7 @@ section {
 }
 
 span {
-    color: #b74b4b; /* Couleur du texte */
+    color:  rgb(240, 244, 203); /* Couleur du texte */
 }
 
 .social-icons a {
@@ -145,18 +145,18 @@ span {
     width:  4rem; /* Largeur des icônes */
     height: 4rem; /* Hauteur des icônes */
     background-color: transparent; /* Fond transparent */
-    border: 0.2rem solid #b74b4b; /* Bordure colorée */
+    border: 0.2rem solid  rgb(240, 244, 203); /* Bordure colorée */
     font-size: 2rem; /* Taille de police des icônes */
     border-radius: 50%; /* Arrondi des coins */
     margin: 3rem 1.5rem 3rem 0; /* Marge autour des icônes */
     transition: 0.3s ease; /* Transition pour les effets */
-    color: #b74b4b; /* Couleur des icônes */
+    color:  rgb(240, 244, 203); /* Couleur des icônes */
 }
 .social-icons a:hover {
-    background-color: #b74b4b; /* Fond coloré au survol */
+    background-color:  rgb(240, 244, 203); /* Fond coloré au survol */
     color: black; /* Couleur du texte au survol */
     transform: scale(1.3) translateY(-5px); /* Effet de zoom et translation au survol */
-    box-shadow: 0 0 25px #b74b4b; /* Ombre portée au survol */
+    box-shadow: 0 0 25px  rgb(240, 244, 203); /* Ombre portée au survol */
 }
 
 .btn {
@@ -165,18 +165,18 @@ span {
     background-color: black; /* Fond coloré */
     border-radius: 4rem; /* Arrondi des coins */
     font-size: 1.6rem; /* Taille de police du bouton */
-    color: #b74b4b; /* Couleur du texte */
+    color:  rgb(240, 244, 203); /* Couleur du texte */
     letter-spacing: 0.3rem; /* Espacement des lettres */
     font-weight: 600; /* Épaisseur de la police */
-    border: 2px solid #b74b4b; /* Bordure colorée */
+    border: 2px solid rgb(240, 244, 203); /* Bordure colorée */
     transition: 0.3s ease; /* Transition pour les effets */
     cursor: pointer; /* Curseur en forme de main */
 }
 .btn:hover {
-    background-color:  #b74b4b; /* Fond coloré au survol */
+    background-color:   rgb(240, 244, 203); /* Fond coloré au survol */
     color: black; /* Couleur du texte au survol */
     transform: scale(1.03); /* Effet de zoom au survol */
-    box-shadow: 0 0 25px #b74b4b; /* Ombre portée au survol */
+    box-shadow: 0 0 25px  rgb(240, 244, 203); /* Ombre portée au survol */
 }
 
 .typing-text {
@@ -189,7 +189,7 @@ span {
 }
 .typing-text span::before {
     content: "IT Enthusiastic"; /* Contenu vide pour l'effet de curseur */
-    color:  #b74b4b; /* Couleur du texte */
+    color:   rgb(240, 244, 203);; /* Couleur du texte */
     animation: words 20s infinite; /* Animation des mots */
 }
 .typing-text span::after {
@@ -205,14 +205,13 @@ span {
 
 @keyframes cursor {
     to {
-        border-left: 3px solid #b74b4b; /* Couleur du curseur */
+        border-left: 3px solid  rgb(240, 244, 203);; /* Couleur du curseur */
     }
 }
 
 @keyframes words{
-    0%, 40% { content: "Scripting Developer"; }
-    41%, 60% { content: "Junior Sysadmin"; }
-    61%, 80% { content: "Junior Web Dev"; }
+    0%, 50% { content: "Junior Sysadmin"; }
+    51%, 100% { content: "Junior Web Dev"; }
 }
 
 @media (max-width: 1000px) {

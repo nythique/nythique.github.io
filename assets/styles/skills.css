@@ -11,7 +11,7 @@
 
 h1 {
     text-align: center;
-    color:  #b74b4b;
+    color:  white;
 }
 h3 {
     margin: 5px;
@@ -24,7 +24,7 @@ h3 {
     margin-top: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
-    background-color: #b74b4b; 
+    background-color: rgb(18, 18, 17); 
 }
 .skills-list li {
     margin: 2px 0;
@@ -47,7 +47,7 @@ h3 {
 .bar span {
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgba(252, 103, 103, 1)0%, rgba(252, 103, 103, 1) 100%);
+    background: linear-gradient(135deg, rgb(240, 244, 203)0%, rgb(240, 244, 203) 100%);
 }
 
 /*Skills Progression Animations Pour chaque langage de programmation*/
